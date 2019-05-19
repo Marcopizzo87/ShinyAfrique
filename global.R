@@ -1,24 +1,24 @@
 
 #### LOAD LIBRARIES ----
 
-library(shiny) # load shiny library
-library(leaflet) # load leaflet library
+library(shiny)
+library(leaflet) 
 library(tidyverse)
 library(dplyr)
 library(ggplot2)
 library(DT)
 library(markdown)
+library(sf)
 
-# Set WD automatically to where the R scrip is
-setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+## Set WD automatically to where the R scrip is
+# setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 
 
 #### LOAD DATA ----
-df.vil <-  readRDS("./data/gaz.drc.50km_wgs84.2.rds")
-buf.20 <- readRDS("./data/buffer.20.dis.rds")
+df.vil <- readRDS("./data/gaz.drc.50km_wgs84.8.rds")
 buf.50 <- readRDS("./data/buffer.50.dis.rds")
 buf.20 <- readRDS("./data/buffer.20.dis.rds")
-df.riv <- readRDS("./data/riv_kas_sank.rds")
+
 
 #### LOAD COLORS ----
 pal.vil <- colorFactor(c("#FF5733","#FFC30F"), domain = c("20km","50km"))

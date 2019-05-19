@@ -45,3 +45,5 @@ body{font-size: 16px;}
                 border-bottom: 1px solid #C0C0C0;
                 font-size: 13px;
                 line-height: 1.2rem;}
+
+.leaflet-control-attribution a {font-weight: normal; font-size: 9px;}
