@@ -1,0 +1,261 @@
+<div class="col-sm-6"><h3>The Shiny Afrique project</h3>
+
+<p>Cette application R-Shiny fait suite à un travail effectué précédemment pour soutenir les activités de organisation non gouvernementale <strong>Solidarités international (SI)</strong> en République démocratique du Congo.
+SI réagit actuellement aux épidémies de choléra dans une zone tampon de 20 km des rivières Sankuru et Kasai.</p>
+
+<p>Les besoins de l’IS étaient de disposer d’une liste fiable de tous les villages, associée à un nombre estimé de résidents bénéficiaires, afin de mieux affecter les ressources et de planifier efficacement les missions.</p>
+
+<p>Cela permet d'explorer l'ensemble de données récupérant des informations pour chaque village en cliquant dessus, ainsi que de filtrer les villages en fonction de leur distance par rapport à la rivière ou à leur nom.
+Entièrement réactif, l'application fournit également un (1) histogramme qui calcule le nombre de villages par rapport à la distance des rivières et (2) le montant total de la population et la population moyenne par village dans la sélection actuelle.</p>
+<br>
+<p>Voici quelques statistiques générales:</p>
+<table class="tab_about"><thead>
+<tr>
+<th></th>
+<th>longueur</th>
+<th>unité</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>longueur des rivière - Kasai</td>
+<td>1926</td>
+<td>km</td>
+</tr>
+<tr>
+<td>longueur des rivière - Sankuru</td>
+<td>1280</td>
+<td>km</td>
+</tr>
+<tr>
+<td>longueur des rivière - total</td>
+<td>3206</td>
+<td>km</td>
+</tr>
+</tbody></table>
+
+<table class="tab_about"><thead>
+<tr>
+<th></th>
+<th>nombre</th>
+<th>population GHSL</th>
+<th>population FB</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>total des villages</td>
+<td>5277</td>
+<td>4895775</td>
+<td>4631871</td>
+</tr>
+<tr>
+<td>villages 20km</td>
+<td>2475</td>
+<td>2668299</td>
+<td>2549717</td>
+</tr>
+<tr>
+<td>villages 50 km</td>
+<td>2802</td>
+<td>2227476</td>
+<td>2082154</td>
+</tr>
+<tr>
+<td>villages - 20 km Sankuru</td>
+<td>806</td>
+<td>1110766</td>
+<td>1165728</td>
+</tr>
+<tr>
+<td>villages - 50 km Sankuru</td>
+<td>1044</td>
+<td>715225</td>
+<td>839952</td>
+</tr>
+<tr>
+<td>villages - 20 km Kasai</td>
+<td>1669</td>
+<td>1557533</td>
+<td>1383989</td>
+</tr>
+<tr>
+<td>villages - 50 km Kasai</td>
+<td>1758</td>
+<td>1512251</td>
+<td>1242202</td>
+</tr>
+</tbody></table>
+
+    
+<h4 class = "pad">Les données</h4>
+
+<p>L'analyse a été réalisée à l'aide des ensembles de données suivants.</p>
+<ul>
+    <li>Pour les villages:</li>
+
+    NATIONAL GEOSPATIAL-INTELIGENCE AGENCY - NGA GEOnet Names Server (GNS)<br>
+    <a class="a2" href="http://geonames.nga.mil/gns/html/namefiles.html">Link</a><br>
+</ul>
+<ul>
+    <li>Pour la population:</li>
+    FACEBOOK - Cartes de densité de population haute résolution<br>
+    <a class="a2" href="https://data.humdata.org/dataset/highresolutionpopulationdensitymaps">Link</a><br>
+    
+    GLOBAL HUMAN SETTLEMENT LAYER (GHSL) - EU Commission, Joint Research Center<br>
+    <a class="a2" href="https://ghsl.jrc.ec.europa.eu/datasets.php">Link</a><br>
+</ul>
+
+<h4 class = "pad">Avertissement</h4>
+
+<p>Veuillez noter que les données n'ont pas été vérifiées sur le terrain. 
+Les estimations de population doivent donc être utilisées avec prudence et vérifiées sur le terrain avant d’être utilisées pour la planification détaillée des activités.</p>
+
+<h4 class = "pad">Système de référence</h4>
+
+<p>Chaque village est associé à des degrés exprimés en degrés Lat/Long, en utilisant le système de référence de projection epsg4326 - wgs84.</p>
+
+<h4 class = "pad">Contacts</h4>
+
+<p>Pour toute question s'il vous plaît contacter: 
+<a class="a2" href="mailto:contact@marcopizzolato.com">contact@marcopizzolato.com</a><br>
+ou visitez la page <a class="a2" href="https://www.marcopizzolato.com/blog/drc-health-survey/">web</a>.</p>
+
+<h4 class = "pad">Légende des statistiques</h4>
+
+<p><strong>BUFFER</strong>: Distance de la rivière<br>
+<strong>GHSL.pop</strong>: Population totale selon le raster de population GHSL<br>
+<strong>FB.pop</strong>: Population totale selon la population de Facebook<br>
+<strong>count.vil</strong>: Nombre de villages actuellement sélectionnés<br>
+<strong>GHSL.pop.vil</strong>: Population moyenne par village (GHSL.pop / count.vil)<br>
+<strong>FB.pop.vil</strong>: Population moyenne par village (FB.pop / count.vil)</p>
+</div> <!end of div 6>
+
+<div class="col-sm-6">
+<h3>The Shiny Afrique project</h3>
+
+<p>This R-Shiny app follows a previous work done to support the activities of the non-profit organization <strong>Solidarités international (SI)</strong> in the Democratic Republic of Congo.
+SI is currently responding to cholera outbreaks within a buffer area of 20km from the rivers Sankuru and Kasai.</p>
+
+<p>SI needs were to have a reliable list of all the villages paired with an estimated number of residents beneficiaries, in order to better allocate resources and plan the missions efficiently.</p>
+
+<p>This allows to explore the dataset retrieving information per each village clicking on it, as well as filtering the villages according to distance from the river or name.
+Fully responsive the app provides also a (1)histogram which calculates the number of villages against the distance from the rivers and (2) the total amount of population and the average population per village in the current selection.</p>
+<br>
+<p>Here some general statistics:</p>
+<table class="tab_about"><thead>
+    <tr>
+        <th></th>
+        <th>length</th>
+        <th>unit</th>
+    </tr>
+</thead><tbody>
+    <tr>
+        <td>river length - Kasai</td>
+        <td>1926</td>
+        <td>km</td>
+    </tr>
+    <tr>
+        <td>river length - Sankuru</td>
+        <td>1280</td>
+        <td>km</td>
+    </tr>
+    <tr>
+        <td>river length - total</td>
+        <td>3206</td>
+        <td>km</td>
+    </tr>
+</tbody></table>
+
+<table class="tab_about"><thead>
+<tr>
+    <th></th>
+        <th>number</th>
+        <th>population GHSL</th>
+        <th>population FB</th>
+    </tr>
+</thead><tbody>
+    <tr>
+        <td>total des villages</td>
+        <td>5277</td>
+        <td>4895775</td>
+        <td>4631871</td>
+    </tr>
+    <tr>
+        <td>villages 20km</td>
+        <td>2475</td>
+        <td>2668299</td>
+        <td>2549717</td>
+    </tr>
+    <tr>
+        <td>villages 50 km</td>
+        <td>2802</td>
+        <td>2227476</td>
+        <td>2082154</td>
+    </tr>
+    <tr>
+        <td>villages - 20 km Sankuru</td>
+        <td>806</td>
+        <td>1110766</td>
+        <td>1165728</td>
+    </tr>
+    <tr>
+        <td>villages - 50 km Sankuru</td>
+        <td>1044</td>
+        <td>715225</td>
+        <td>839952</td>
+    </tr>
+    <tr>
+        <td>villages - 20 km Kasai</td>
+        <td>1669</td>
+        <td>1557533</td>
+        <td>1383989</td>
+    </tr>
+    <tr>
+        <td>villages - 50 km Kasai</td>
+        <td>1758</td>
+        <td>1512251</td>
+        <td>1242202</td>
+    </tr>
+</tbody></table>
+
+<h4 class = "pad">The data</h4>
+
+<p>The analysis was performed using the following datasets.</p>
+<ul>
+    <li>For the villages:</li>
+
+    NATIONAL GEOSPATIAL-INTELIGENCE AGENCY - NGA GEOnet Names Server (GNS)<br>
+    <a class="a2" href="http://geonames.nga.mil/gns/html/namefiles.html">Link</a><br>
+</ul>
+<ul>
+    <li>For the population:</li>
+    FACEBOOK - High-Resolution Population Density Maps<br>
+    <a class="a2" href="https://data.humdata.org/dataset/highresolutionpopulationdensitymaps">Link</a><br>
+    
+    GLOBAL HUMAN SETTLEMENT LAYER (GHSL) - EU Commission, Joint Research Center<br>
+    <a class="a2" href="https://ghsl.jrc.ec.europa.eu/datasets.php">Link</a><br>
+</ul>
+
+<h4 class = "pad">Disclaimer</h4>
+<p>Please note that the data has not been verified in the field.
+Population estimates should therefore be used with caution and verified in the field before being used for detailed activity planning.</p>
+
+            
+<h4 class = "pad">Reference system</h4>
+<p>Each village has associated expressed in degrees Lat/Long, using the projection epsg reference system 4326 - wgs84.</p>
+
+<h4 class = "pad">Contacts</h4>
+            
+<p>For any question please contact: <a class="a2" href="mailto:contact@marcopizzolato.com">contact@marcopizzolato.com</a><br>
+or visit the <a class="a2" href="https://www.marcopizzolato.com/blog/drc-health-survey/">web</a> page.</p>
+
+
+<h4 class = "pad">Stats Legend</h4>
+
+<p><strong>BUFFER</strong> : Distance from the river<br>
+<strong>GHSL.pop</strong>: Total population according to the GHSL population raster<br>
+<strong>FB.pop</strong>: Total population according to the Facebook population raster<br>
+<strong>count.vil</strong>: Number of villages currently selected<br>
+<strong>GHSL.pop.vil</strong>: Average population per village ( GHSL.pop / count.vil)<br>
+<strong>FB.pop.vil</strong>: Average population per village ( FB.pop / count.vil)</p>
+</div> <!end of div 6>
+
