@@ -29,20 +29,22 @@ ui <-
                           sliderInput(input = "distance", label = NULL, value = c(0,50), min = 0, max = 50),
                           # tags$br(),
                           
-                          tags$h4("Num. of villages VS dist. from rivers:", class = "padplus"),
+                          tags$h4("Num. of villages by dist. from rivers:", class = "padplus"),
                           ## Histogram
                           plotOutput("hist"),
                           tags$br(),
                           # plotOutput("scatter"), ## decided not to show this
                           
                           ## Stats table
-                          verbatimTextOutput("stats")
+                          verbatimTextOutput("stats"),
+                          
+                          tags$p("")
                         ), # end of sidebarPanel
                         
                         ### Main panel with the map
                         mainPanel(
                           tags$style(type = "text/css", '#mymap {height: calc(100vh - 80px) !important;}'),
-                          leafletOutput("mymap", height = "90vh")
+                          leafletOutput("mymap", height = "100vh")
                         ) # end of mainPanel
                       ) # end of sidebarLayout
              ), # end of tabPanel

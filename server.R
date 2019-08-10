@@ -70,7 +70,8 @@ server <- function(input, output, session) {
     # Scatterplot population VS distance
     ggplot(data2(), aes(x=data2()$Dist_km)) + 
       #geom_histogram(aes(y = ..count..), binwidth = 4.5,
-      geom_histogram(breaks=seq(-5, 50, by=5), colour = "#f5f4f4", fill = "blue", alpha=0.2) +
+      geom_histogram(breaks=seq(-5, 20, by=5), colour = "#f5f4f4", fill = "#FF5733", alpha=0.2) +
+      geom_histogram(breaks=seq(20, 50, by=5), colour = "#f5f4f4", fill = "#FFC30F", alpha=0.2) +
       scale_x_continuous(breaks = seq(0, 50, 10), limits=c(0, 50)) +
       scale_y_continuous(labels = scales::comma, limits=c(0, 700)) +
        theme_bw() +

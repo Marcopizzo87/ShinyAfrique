@@ -11,7 +11,7 @@ library(markdown)
 library(sf)
 
 ## Set WD automatically to where the R scrip is
-# setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 
 
 #### LOAD DATA ----
